@@ -1,0 +1,196 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 30, 2024, 3:44:57 PM
+    Author     : Tshiamo
+*/
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background: #eee;
+    padding-top: 50px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.table {
+    width: 100%;
+}
+
+.table tr td, .table tr th {
+    vertical-align: middle;
+}
+
+.table--order {
+    margin-top: 10px;
+}
+
+.table--order thead tr {
+    border: 1px solid #E9ECF2;
+    border-left: none;
+    border-right: none;
+    background: #F9FBFC;
+    color: #67676C;
+    min-height: 52px;
+    line-height: 30px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.table--order thead tr th {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.table--order tbody tr {
+    text-align: center;
+    border-bottom: 1px dashed #ddd;
+}
+
+.table--order tbody tr td:last-child {
+    padding-right: 15px;
+}
+
+.order {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 10px 0;
+    box-shadow: 0 0px 12px rgba(0, 0, 0, .1);
+    color: #444;
+}
+
+.order::after {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 100%;
+    height: 36px;
+    background: linear-gradient(#FFFFFF 0%, transparent 0%), 
+                linear-gradient(135deg, #eee 33.33%, transparent 33.33%), 
+                linear-gradient(45deg, #eee 33.33%, #FFFFFF 33.33%);
+    background-repeat: repeat-x;
+    background-size: 0 100%, 14px 27px, 14px 27px;
+}
+
+.order__tr-image {
+    width: 100px;
+    text-align: center;
+}
+
+.order__title {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: 700;
+    padding: 0 15px;
+}
+
+.order__title-count {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    margin-top: -2px;
+    background: #eee;
+    vertical-align: middle;
+    padding: 0 14px;
+    border-radius: 100px;
+    color: #bbb;
+    font-size: 1rem;
+}
+
+.order__image {
+    display: inline-block;
+    width: 50px; /* Replaced with a fixed value */
+    border-radius: 100%;
+    margin: 15px 0;
+    box-shadow: 0 0 0 4px #eee;
+}
+
+.order__name {
+    margin-top: 12px;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.order__desc {
+    color: #ccc;
+    margin: 8px 0 0 0;
+    font-size: 0.8rem;
+}
+
+.order__time {
+    font-weight: 700;
+    color: #777;
+    border-bottom: 1px solid;
+}
+
+.order__price-cur {
+    font-size: 0.6rem;
+    color: #777;
+}
+
+.order__delete {
+    display: inline-block;
+    width: 24px;
+    height: 14px;
+    border-radius: 40px;
+    line-height: 14px;
+    color: #fff;
+    background: #f44336;
+    font-size: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+
+    .table--order thead tr {
+        font-size: 0.5rem;
+    }
+
+    .table--order tbody tr td {
+        padding: 0 6px;
+    }
+
+    .order__tr-image {
+        width: 40px;
+    }
+
+    .order__image {
+        width: 33px; /* 50px / 1.5 */
+        box-shadow: none;
+    }
+
+    .order__title {
+        font-size: 1.2rem;
+    }
+
+    .order__title-count {
+        font-size: 0.8rem;
+        padding: 0 10px;
+        margin-top: -1px;
+        height: 22px;
+        line-height: 22px;
+    }
+}
+
+
+/**/
+
